@@ -1,7 +1,7 @@
 package com.yui.system.enums;
 
-import com.yui.system.annotation.EnumFieldInit;
-import com.yui.system.annotation.EnumInit;
+import com.yui.system.enums.annotation.EnumFieldInit;
+import com.yui.system.enums.annotation.EnumInit;
 
 /**
  * @author XuZhuohao

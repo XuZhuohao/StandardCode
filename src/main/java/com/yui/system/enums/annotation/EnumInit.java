@@ -1,4 +1,4 @@
-package com.yui.system.annotation;
+package com.yui.system.enums.annotation;
 
 
 import java.lang.annotation.ElementType;
@@ -7,18 +7,18 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 枚举初始值注解
+ * 枚举处理注解
  * {@link com.yui.system.enums.MsgCode}
  *
  * @author XuZhuohao
  * @date 2020/3/24
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.FIELD)
-public @interface EnumFieldInit {
+@Target(ElementType.TYPE)
+public @interface EnumInit {
 
-    int code();
+    int preCode();
 
-    String msg();
+    String preMsg() default "";
 
 }
